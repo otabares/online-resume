@@ -1,0 +1,241 @@
+/** Coded by Oto Tabares **/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** The bg-color in the html and body selectors address the scroll bounce in WebKit browsers. **/
+html {
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/***********************
+  Navigation selectors
+***********************/
+
+.main-nav {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5); /** Got this idea from Udacity's website. **/
+}
+
+.main-nav ul {
+  list-style-type: none;
+  width: 600px;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.main-nav li {
+  width: 120px;
+}
+
+.main-nav li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 70px;
+  display: block;
+}
+
+.main-nav li a:hover {
+  background-color: rgb(0,115,252);
+}
+
+/*************************
+  Hero section selectors
+*************************/
+
+.hero {
+  position: relative;
+  height: 450px;
+}
+
+.hero-img-about {
+  background: url("images/me.jpg") center/cover no-repeat;
+  height: 100%;
+}
+
+/* Photo by Sai Kiran Anagani on Unsplash */
+.hero-img-exp {
+  background: url("images/experience.jpg") center/cover no-repeat;
+  height: 100%;
+}
+
+/* Photo by Aaron Burden on Unsplash */
+.hero-img-edu {
+  background: url("images/education.jpg") center/cover no-repeat;
+  height: 100%;
+}
+
+/* Photo by Todd Quackenbush on Unsplash */
+.hero-img-skills {
+  background: url("images/skills.jpg") center/cover no-repeat;
+  height: 100%;
+}
+
+.hero-img-passions {
+  background: url("images/passions.jpg") center/cover no-repeat;
+  height: 100%;
+}
+
+.hero-bar {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 400px;
+  height: 450px;
+  background-color: rgba(29,79,115,0.5);
+}
+
+.hero-txt-about {
+  position: absolute;
+  top: 25%;
+  margin: 0;
+  padding-left: 30px;
+  width: 400px;
+  color: white;
+  font-size: 100px;
+  text-align: left;
+  text-shadow: 2px 2px black;
+}
+
+.subpage-hero-txt {
+  /** Center the text box **/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /** Format the text **/
+  margin: 0;
+  padding: 30px;
+  border: 10px solid white;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+/********************
+  Content selectors
+********************/
+
+.container {
+  width: 600px;
+  margin: 125px auto;
+}
+
+.container article {
+  margin: 100px 0;
+}
+
+.container h2 {
+  margin: 75px 0 0;
+  font-size: 3em;
+  color: rgb(0,115,252);
+  border-bottom: 3px solid rgba(0,115,252,0.8);
+  text-transform: uppercase;
+}
+
+.container h3 {
+  margin: 50px 0 20px;
+  font-size: 2em;
+  color: rgba(0,115,252,0.8);
+}
+
+.container p {
+  margin: 0 0 0.8em;
+  font-size: 1.2em;
+  color: dimgray;
+}
+
+.container.intro-text p {
+  line-height: 1.7em;
+}
+
+.container .list {
+  margin: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(0,115,252,0.1);
+}
+
+.container .list li {
+  margin: 0 0 0.8em;
+  font-size: 1em;
+  line-height: 0.8em;
+  color: gray;
+  list-style-type: none;
+}
+
+.container .list li a {
+  text-decoration: none;
+  color: rgba(0,115,252,0.7);
+}
+
+.container .list li a:hover {
+  text-decoration: none;
+  color: rgb(0,115,252);
+}
+
+.container .article-sub {
+  background-color: rgba(0,115,252,0.8);
+  font-size: 0.75em;
+  color: white;
+  padding: 5px;
+  text-align: right;
+}
+
+.container .sup {
+  vertical-align: super;
+  font-size: 0.5em;
+}
+
+.columns {
+  display: flex;
+}
+
+.left-col, .right-col {
+  width: 50%;
+}
+
+/*******************
+  Footer selectors
+*******************/
+
+.main-footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+.main-footer p {
+  font-size: 12px;
+  margin: 0;
+  color: dimgray;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
